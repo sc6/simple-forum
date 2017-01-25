@@ -1,0 +1,26 @@
+{
+  "name": "simple-forum",
+  "version": "1.0.0",
+  "description": "A simple forum deployable on any website. Made using react+redux.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sc6/simple-forum.git"
+  },
+  "keywords": [
+    "forum",
+    "thread",
+    "community",
+    "online",
+    "board"
+  ],
+  "author": "Steve Chang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sc6/simple-forum/issues"
+  },
+  "homepage": "https://github.com/sc6/simple-forum#readme"
+}
