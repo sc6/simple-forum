@@ -1,7 +1,8 @@
 import React, { Component, PropTypes } from 'react'
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import {incrementPostCount, editUserName} from '../actions/index'
+
+import { incrementPostCount, editUserName, editJoinDate } from '../actions/index'
 
 class AdminSection extends Component {
   static propTypes = {
@@ -11,40 +12,36 @@ class AdminSection extends Component {
   }
 
   render() {
-    const { user, increment, changeName } = this.props
-
+    const { increment, changeName, changeJoinDate } = this.props
+    //console.log(this.refs.textInput)
     return (
-      <div>
-        <input id="multipurpose-input" type="text" />
+      <form>
+        <input id="multipurpose-input" type="text" ref="textInput"/>
         <br /><br />
-        <button onClick={ changeName }>
-          edit userName
-        </button>
+        <input type="button" onClick={ changeName } value="edit UserName" />
         { " " }
-        <button onClick={ increment }>
-          postCount++
-        </button>
+        <input type="button" onClick={ increment } value="postCount++" />
         { " " }
-        <button>
-          edit joinDate
-        </button>
-      </div>
+        <input type="button" onClick={ changeJoinDate } value="edit joinDate" />
+      </form>
     )
   }
 }
 
 const mapStateToProps = (state, ownProps) => {
-  console.log(ownProps);
-  console.log(incrementPostCount);
   return ({
     user: state.user,
     actions: ownProps.actions
   });
 }
 
-const mapDispatchToProps = dispatch => ({
-  increment: (text) => dispatch(incrementPostCount(text)),
-  changeName: () => dispatch(editUserName())
-})
+const mapDispatchToProps = (dispatch) => {
+  //console.log(ownProps.user)
+  return ({
+    increment: () => dispatch(incrementPostCount()),
+    changeName: () => dispatch(editUserName("Hello world")),
+    changeJoinDate: () => dispatch(editJoinDate("Mar-12-2020"))
+  });
+}
 
 export default connect(mapStateToProps, mapDispatchToProps)(AdminSection)

@@ -15,9 +15,16 @@ function editUserName (newUserName) {
 	console.log("Changed userName to ", newUserName)
 	return {
 		type: 'CHANGE_USER_NAME',
-		payload: newUserName
+		newUserName: newUserName
 	}
 }
 
-export { incrementPostCount };
-export { editUserName};
+function editJoinDate (newJoinDate) {
+	return {
+		type: 'CHANGE_JOIN_DATE',
+		newJoinDate: newJoinDate
+	}
+}
+
+
+export { incrementPostCount, editUserName, editJoinDate };
