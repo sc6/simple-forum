@@ -1,3 +1,4 @@
+
 //action creator
 // export const incrementPostCount = () => {
 // 	return {
@@ -17,6 +18,26 @@ function editUserName (newUserName) {
 		type: 'CHANGE_USER_NAME',
 		newUserName: newUserName
 	}
+}
+
+export function editUserNameDelegate () {
+	// return (dispatch, getState) => {
+	// 	const { state } = getState()
+	// 	dispatch(editUserName(state.textInput));
+	// }
+	// console.log("Attempting to change username")
+	// return (dispatch, getState) => {
+	// 	const { state } = getState()
+	// 	dispatch(editUserName(state.textInput))
+	// }
+	return function (dispatch, getState) {
+		return dispatch(editUserName("thunkUser"))
+	}
+	// return (dispatch, getState) => {
+	//   console.log(getState);
+	//   const { textInput } = getState;
+	//   dispatch(editUserName(textInput));
+	// };
 }
 
 function editJoinDate (newJoinDate) {
