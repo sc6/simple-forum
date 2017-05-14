@@ -1,0 +1,17 @@
+.post {
+    width: 700px;
+    margin: 10px auto;
+}
+
+.post .head {
+	color:#bbbabb;
+	background-color:#2a3134;
+}
+
+.post .head .datetime {
+	float:right;
+}
+
+.post .body {
+
+}

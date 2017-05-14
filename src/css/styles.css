@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* Universal 
+.colorWhite { color:white; }
+.floatRight { float:right; }
+
+.darken_on_hover:hover {
+	opacity:0.5;
+	border:1px solid red;
+}
+
+.sidebar {
+	background-color:#ddd;
+}
+
+.sidebar-list-item:hover {
+	cursor:pointer;
+	background-color:#d3d3d3;
+}
+*/
+
+/* Header */
+/*
+header {
+	justify-content: center;
+	background-color: #000;
+	color:white;
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+
+header div.left {
+	display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    flex-basis: 48%;
+}
+
+header div.right {
+	display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    flex-basis: 48%;
+} */
+
+/* Utility 
+#utility {
+	background-color: #2a3134;
+	color:#E0E2E4;
+    height: calc(100vh - 25px);
+    width: 33%;
+    display: inline-block;
+} 
+*/
+
+/* Content 
+#content {
+	background-color: #132838;
+    color: #FFF;
+    width: 67%;
+    height: calc(100vh - 25px);
+    float: right;
+    display: inline-block;
+}
+
+.post {
+    width: 700px;
+    margin: 10px auto;
+}
+
+.post .head {
+	color:#bbbabb;
+	background-color:#2a3134;
+}
+
+.post .head .datetime {
+	float:right;
+}
+
+.post .body {
+
+}
+*/

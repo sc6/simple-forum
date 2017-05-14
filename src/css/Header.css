@@ -1,0 +1,24 @@
+header {
+	justify-content: center;
+	background-color: #000;
+	color:white;
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+
+header div.left {
+	display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    flex-basis: 48%;
+}
+
+header div.right {
+	display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    flex-basis: 48%;
+}

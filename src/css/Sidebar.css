@@ -1,0 +1,7 @@
+.sidebar {
+    background-color: #2a3134;
+    color:#E0E2E4;
+    height: calc(100vh - 25px);
+    width: 33%;
+    display: inline-block;
+}

@@ -1,0 +1,8 @@
+.thread {
+	background-color: #132838;
+    color: #FFF;
+    width: 67%;
+    height: calc(100vh - 25px);
+    float: right;
+    display: inline-block;
+}
