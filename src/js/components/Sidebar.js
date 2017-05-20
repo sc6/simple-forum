@@ -5,7 +5,15 @@ class Sidebar extends React.Component {
   render() {
     return (
       <div className="sidebar">
-      	This is the sidebar area.
+        <div className="sidebar-section">
+          <span>This thread was started by john_sample on March 25th, 2017.</span>
+        </div>
+
+      	<div className="sidebar-section">
+          <span>Add a post:</span>
+      		<textarea placeholder="Add to the conversation..."></textarea>
+          <button>Submit</button>
+      	</div>
       </div>
     );
   }

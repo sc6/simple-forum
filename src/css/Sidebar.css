@@ -5,3 +5,21 @@
     width: 33%;
     display: inline-block;
 }
+
+.sidebar-section {
+	border-top:1px solid #444444;
+	font-size:13px;
+	padding:12px 8px;
+}
+
+.sidebar-section textarea {
+	background-color:#444444;
+	border: 0;
+	padding:4px;
+	color:white;
+	display:block;
+	width:95%;
+	height:40px;
+	margin:10px 0;
+	resize:none;
+}
