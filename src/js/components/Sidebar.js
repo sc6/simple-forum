@@ -2,6 +2,11 @@ import React from 'react';
 import '../../css/Sidebar.css';
 
 class Sidebar extends React.Component {
+
+  addPost() {
+    
+  }
+
   render() {
     return (
       <div className="sidebar">

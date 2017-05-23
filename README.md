@@ -13,13 +13,11 @@ Simple-Forum is a project I wanted to do for a while. Any virtual community need
 ### Tech
 - ReactJS
 
-### Roadmap
-- ~~Setup a database on AWS, deploy initial app on EBS, and hope it works.~~
-- Develop UI for a user info page.
-- Develop UI for a thread.
-- Hook up backend for posting a thread and updating user info accordingly.
-- Develop UI for a thread-group.
-- ~~Finish post creation interaction.~~
+### Long-term TODO
+- Create basic thread-post system with user login capabilities.
+
+### Short-term TODO
+- Create AWS Endpoint to post to a thread with thread_id.
 
 ### Database Schema
 Users:
